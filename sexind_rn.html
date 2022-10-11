@@ -1,0 +1,1318 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Sexo indefinido</title>
+
+<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.tab('show');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"></a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Caracterização
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="variaveis_rn.html">Variavéis de gestação e parto</a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="veriaveis_pais.html">Variáveis dos pais</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Comparações dados gestação e parto
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="hipospadia_rn.html">Hipospádias</a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="sexind_rn.html">Sexo indefinido</a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="cardio_rn.html">Cardiopatias congênitas</a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="abdominal_rn.html">Defeitos da parede abdominal</a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="membros_rn.html">Defeitos de membros</a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="neural_rn.html">Defeitos de tubo neural</a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="fendas_rn.html">Fendas orais</a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="microcefalia_rn.html">Microcefalia</a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="down_rn.html">Síndrome de Down</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Comparações dados pais
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="hipospadias_pais.html">Hipospádias</a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="sexind_pais.html">Sexo indefinido</a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="cardio_pais.html">Cardiopatias congênitas</a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="abdominal_pais.html">Defeitos da parede abdominal</a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="membros_pais.html">Defeitos de membros</a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="neural_pais.html">Defeitos de tubo neural</a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="fendas_pais.html">Fendas orais</a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="microcefalia_pais.html">Microcefalia</a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="down_pais.html">Síndrome de Down</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Histogramas variáveis contínuas
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="peso.html">Peso ao nascimento</a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="semana.html">Semanas de gestação</a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="idade_mae.html">Idade da nãe</a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="idade_pai.html">Idade do pai</a>
+    </li>
+  </ul>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Sexo indefinido</h1>
+
+</div>
+
+
+<div id="mypjtfmyys" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+}
+
+#mypjtfmyys .gt_table {
+  display: table;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#mypjtfmyys .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#mypjtfmyys .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#mypjtfmyys .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 0;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#mypjtfmyys .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#mypjtfmyys .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#mypjtfmyys .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#mypjtfmyys .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#mypjtfmyys .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#mypjtfmyys .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#mypjtfmyys .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#mypjtfmyys .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#mypjtfmyys .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#mypjtfmyys .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#mypjtfmyys .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#mypjtfmyys .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#mypjtfmyys .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#mypjtfmyys .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#mypjtfmyys .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#mypjtfmyys .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#mypjtfmyys .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#mypjtfmyys .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#mypjtfmyys .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#mypjtfmyys .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#mypjtfmyys .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#mypjtfmyys .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#mypjtfmyys .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#mypjtfmyys .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#mypjtfmyys .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#mypjtfmyys .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#mypjtfmyys .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#mypjtfmyys .gt_left {
+  text-align: left;
+}
+
+#mypjtfmyys .gt_center {
+  text-align: center;
+}
+
+#mypjtfmyys .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#mypjtfmyys .gt_font_normal {
+  font-weight: normal;
+}
+
+#mypjtfmyys .gt_font_bold {
+  font-weight: bold;
+}
+
+#mypjtfmyys .gt_font_italic {
+  font-style: italic;
+}
+
+#mypjtfmyys .gt_super {
+  font-size: 65%;
+}
+
+#mypjtfmyys .gt_footnote_marks {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 75%;
+  vertical-align: 0.4em;
+}
+
+#mypjtfmyys .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#mypjtfmyys .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#mypjtfmyys .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#mypjtfmyys .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#mypjtfmyys .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#mypjtfmyys .gt_indent_5 {
+  text-indent: 25px;
+}
+</style>
+<table class="gt_table">
+  <caption><strong>Comparação entre nascidos vivos sem anomalias e com anomalias de órgãos genitais - sexo indefinido para o período de 2011-2020</strong></caption>
+  
+  <thead class="gt_col_headings">
+    <tr>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col"><strong>Característica</strong></th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col"><strong>N</strong></th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col"><strong>Anomalias de órgãos genitais - Sexo indefinido</strong>, N = 109</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col"><strong>Sem anomalias</strong>, N = 937,083</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col"><strong>p-value</strong><sup class="gt_footnote_marks">1</sup></th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Sexo, n(%)</td>
+<td class="gt_row gt_left">937,192</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left"><0.001</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Feminino</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">13(12%)</td>
+<td class="gt_row gt_left">456,495(49%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Masculino</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">19(17%)</td>
+<td class="gt_row gt_left">480,568(51%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Ignorado</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">77(71%)</td>
+<td class="gt_row gt_left">20(&lt;0.1%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Raça, n(%)</td>
+<td class="gt_row gt_left">937,192</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">0.9</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Amarela</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">0(0%)</td>
+<td class="gt_row gt_left">29(&lt;0.1%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Branca</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">6(5.5%)</td>
+<td class="gt_row gt_left">52,185(5.6%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Indígena</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">0(0%)</td>
+<td class="gt_row gt_left">87(&lt;0.1%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Parda</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">0(0%)</td>
+<td class="gt_row gt_left">1,375(0.1%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Preta</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">0(0%)</td>
+<td class="gt_row gt_left">483(&lt;0.1%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Ignorado</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">103(94%)</td>
+<td class="gt_row gt_left">882,924(94%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Peso ao nascimento</td>
+<td class="gt_row gt_left">937,163</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left"><0.001</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">n</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">109</td>
+<td class="gt_row gt_left">937,054</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Média (DP)</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">2,185 (934)</td>
+<td class="gt_row gt_left">3,224 (551)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Mínimo</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">490</td>
+<td class="gt_row gt_left">100</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Máximo</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">4,045</td>
+<td class="gt_row gt_left">7,000</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Mediana</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">2,200</td>
+<td class="gt_row gt_left">3,255</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Variância</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">873,215</td>
+<td class="gt_row gt_left">304,082</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Apgar 1º Minuto, n(%)</td>
+<td class="gt_row gt_left">934,823</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left"><0.001</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">0</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">3(2.8%)</td>
+<td class="gt_row gt_left">813(&lt;0.1%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">1</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">25(23%)</td>
+<td class="gt_row gt_left">2,553(0.3%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">2</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">7(6.5%)</td>
+<td class="gt_row gt_left">3,402(0.4%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">3</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">7(6.5%)</td>
+<td class="gt_row gt_left">4,641(0.5%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">4</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">5(4.6%)</td>
+<td class="gt_row gt_left">6,649(0.7%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">5</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">5(4.6%)</td>
+<td class="gt_row gt_left">10,167(1.1%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">6</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">6(5.6%)</td>
+<td class="gt_row gt_left">19,806(2.1%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">7</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">10(9.3%)</td>
+<td class="gt_row gt_left">60,998(6.5%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">8</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">27(25%)</td>
+<td class="gt_row gt_left">331,076(35%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">9</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">13(12%)</td>
+<td class="gt_row gt_left">463,907(50%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">10</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">0(0%)</td>
+<td class="gt_row gt_left">30,703(3.3%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Apgar 5º Minuto, n(%)</td>
+<td class="gt_row gt_left">934,818</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left"><0.001</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">0</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">8(7.4%)</td>
+<td class="gt_row gt_left">602(&lt;0.1%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">1</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">16(15%)</td>
+<td class="gt_row gt_left">734(&lt;0.1%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">2</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">4(3.7%)</td>
+<td class="gt_row gt_left">464(&lt;0.1%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">3</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">2(1.9%)</td>
+<td class="gt_row gt_left">533(&lt;0.1%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">4</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">3(2.8%)</td>
+<td class="gt_row gt_left">885(&lt;0.1%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">5</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">3(2.8%)</td>
+<td class="gt_row gt_left">1,690(0.2%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">6</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">7(6.5%)</td>
+<td class="gt_row gt_left">3,264(0.3%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">7</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">9(8.3%)</td>
+<td class="gt_row gt_left">10,900(1.2%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">8</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">12(11%)</td>
+<td class="gt_row gt_left">60,516(6.5%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">9</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">34(31%)</td>
+<td class="gt_row gt_left">466,920(50%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">10</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">10(9.3%)</td>
+<td class="gt_row gt_left">388,202(42%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Nº de Semanas de Gestação</td>
+<td class="gt_row gt_left">836,020</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left"><0.001</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">n</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">96</td>
+<td class="gt_row gt_left">835,924</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Média (DP)</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">35.39 (3.86)</td>
+<td class="gt_row gt_left">38.52 (2.15)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Mínimo</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">23.00</td>
+<td class="gt_row gt_left">19.00</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Máximo</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">41.00</td>
+<td class="gt_row gt_left">45.00</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Mediana</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">36.00</td>
+<td class="gt_row gt_left">39.00</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Variância</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">14.89</td>
+<td class="gt_row gt_left">4.61</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Semanas de Gestação (faixa), n(%)</td>
+<td class="gt_row gt_left">937,192</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left"><0.001</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Menos de 22 semanas</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">0(0%)</td>
+<td class="gt_row gt_left">324(&lt;0.1%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">22 a 27 semanas</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">5(4.6%)</td>
+<td class="gt_row gt_left">4,073(0.4%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">28 a 31 semanas</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">13(12%)</td>
+<td class="gt_row gt_left">8,587(0.9%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">32 a 36 semanas</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">43(39%)</td>
+<td class="gt_row gt_left">85,504(9.1%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">37 a 41 semanas</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">47(43%)</td>
+<td class="gt_row gt_left">811,778(87%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">42 semanas ou mais</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">1(0.9%)</td>
+<td class="gt_row gt_left">22,021(2.3%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Ignorado</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">0(0%)</td>
+<td class="gt_row gt_left">4,796(0.5%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Tipo de Parto, n(%)</td>
+<td class="gt_row gt_left">937,192</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">0.012</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Cesária</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">79(72%)</td>
+<td class="gt_row gt_left">550,049(59%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Vaginal</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">30(28%)</td>
+<td class="gt_row gt_left">386,266(41%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Ignorado</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">0(0%)</td>
+<td class="gt_row gt_left">768(&lt;0.1%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Apresentação RN, n(%)</td>
+<td class="gt_row gt_left">937,192</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left"><0.001</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Cefálica</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">69(63%)</td>
+<td class="gt_row gt_left">793,835(85%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Pélvica ou podálica</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">22(20%)</td>
+<td class="gt_row gt_left">35,659(3.8%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Transversa</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">2(1.8%)</td>
+<td class="gt_row gt_left">2,415(0.3%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Ignorado</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">16(15%)</td>
+<td class="gt_row gt_left">105,174(11%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Tipo de Gravidez, n(%)</td>
+<td class="gt_row gt_left">937,192</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">0.3</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Única</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">105(96%)</td>
+<td class="gt_row gt_left">915,619(98%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Dupla</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">4(3.7%)</td>
+<td class="gt_row gt_left">20,215(2.2%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Tripla ou mais</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">0(0%)</td>
+<td class="gt_row gt_left">510(&lt;0.1%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Ignorado</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">0(0%)</td>
+<td class="gt_row gt_left">739(&lt;0.1%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Número de Consultas Pré-natal, n(%)</td>
+<td class="gt_row gt_left">937,192</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left"><0.001</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Nenhuma</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">2(1.8%)</td>
+<td class="gt_row gt_left">7,568(0.8%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">de 1 a 3</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">5(4.6%)</td>
+<td class="gt_row gt_left">38,441(4.1%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">de 4 a 6</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">39(36%)</td>
+<td class="gt_row gt_left">194,665(21%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">7 ou mais</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">61(56%)</td>
+<td class="gt_row gt_left">693,291(74%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Ignorado</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">2(1.8%)</td>
+<td class="gt_row gt_left">3,118(0.3%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Número abortos(faixa), n(%)</td>
+<td class="gt_row gt_left">937,192</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">0.9</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Nenhum</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">91(83%)</td>
+<td class="gt_row gt_left">762,392(81%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Um a três</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">17(16%)</td>
+<td class="gt_row gt_left">153,687(16%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Dez ou mais</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">0(0%)</td>
+<td class="gt_row gt_left">43(&lt;0.1%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Sete a nove</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">0(0%)</td>
+<td class="gt_row gt_left">116(&lt;0.1%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Quatro a seis</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">0(0%)</td>
+<td class="gt_row gt_left">1,567(0.2%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Ignorado</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">1(0.9%)</td>
+<td class="gt_row gt_left">19,278(2.1%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Local de Nascimento, n(%)</td>
+<td class="gt_row gt_left">937,192</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">0.4</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Domicílio</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">0(0%)</td>
+<td class="gt_row gt_left">2,722(0.3%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Hospital</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">109(100%)</td>
+<td class="gt_row gt_left">931,978(99%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Outro estabelecimento de saúde</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">0(0%)</td>
+<td class="gt_row gt_left">1,283(0.1%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Outros</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">0(0%)</td>
+<td class="gt_row gt_left">1,054(0.1%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Ignorado</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">0(0%)</td>
+<td class="gt_row gt_left">46(&lt;0.1%)</td>
+<td class="gt_row gt_left"></td></tr>
+  </tbody>
+  <tfoot class="gt_sourcenotes">
+    <tr>
+      <td class="gt_sourcenote" colspan="5"><em>Fonte: Sinasc</em></td>
+    </tr>
+  </tfoot>
+  <tfoot class="gt_footnotes">
+    <tr>
+      <td class="gt_footnote" colspan="5"><sup class="gt_footnote_marks">1</sup> Fisher's Exact Test for Count Data with simulated p-value
+(based on 2000 replicates); Kruskal-Wallis rank sum test</td>
+    </tr>
+  </tfoot>
+</table>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

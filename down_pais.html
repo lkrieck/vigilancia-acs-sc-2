@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Síndrome de Down</title>
+
+<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.tab('show');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"></a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Caracterização
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="variaveis_rn.html">Variavéis de gestação e parto</a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="veriaveis_pais.html">Variáveis dos pais</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Comparações dados gestação e parto
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="hipospadia_rn.html">Hipospádias</a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="sexind_rn.html">Sexo indefinido</a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="cardio_rn.html">Cardiopatias congênitas</a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="abdominal_rn.html">Defeitos da parede abdominal</a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="membros_rn.html">Defeitos de membros</a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="neural_rn.html">Defeitos de tubo neural</a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="fendas_rn.html">Fendas orais</a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="microcefalia_rn.html">Microcefalia</a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="down_rn.html">Síndrome de Down</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Comparações dados pais
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="hipospadias_pais.html">Hipospádias</a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="sexind_pais.html">Sexo indefinido</a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="cardio_pais.html">Cardiopatias congênitas</a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="abdominal_pais.html">Defeitos da parede abdominal</a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="membros_pais.html">Defeitos de membros</a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="neural_pais.html">Defeitos de tubo neural</a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="fendas_pais.html">Fendas orais</a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="microcefalia_pais.html">Microcefalia</a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="down_pais.html">Síndrome de Down</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Histogramas variáveis contínuas
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="peso.html">Peso ao nascimento</a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="semana.html">Semanas de gestação</a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="idade_mae.html">Idade da nãe</a>
+    </li>
+    <li class="divider"></li>
+    <li>
+      <a href="idade_pai.html">Idade do pai</a>
+    </li>
+  </ul>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Síndrome de Down</h1>
+
+</div>
+
+
+<div id="uxhsbqngcq" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+}
+
+#uxhsbqngcq .gt_table {
+  display: table;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#uxhsbqngcq .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#uxhsbqngcq .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#uxhsbqngcq .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 0;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#uxhsbqngcq .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#uxhsbqngcq .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#uxhsbqngcq .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#uxhsbqngcq .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#uxhsbqngcq .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#uxhsbqngcq .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#uxhsbqngcq .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#uxhsbqngcq .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#uxhsbqngcq .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#uxhsbqngcq .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#uxhsbqngcq .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#uxhsbqngcq .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#uxhsbqngcq .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#uxhsbqngcq .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#uxhsbqngcq .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#uxhsbqngcq .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#uxhsbqngcq .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#uxhsbqngcq .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#uxhsbqngcq .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#uxhsbqngcq .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#uxhsbqngcq .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#uxhsbqngcq .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#uxhsbqngcq .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#uxhsbqngcq .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#uxhsbqngcq .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#uxhsbqngcq .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#uxhsbqngcq .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#uxhsbqngcq .gt_left {
+  text-align: left;
+}
+
+#uxhsbqngcq .gt_center {
+  text-align: center;
+}
+
+#uxhsbqngcq .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#uxhsbqngcq .gt_font_normal {
+  font-weight: normal;
+}
+
+#uxhsbqngcq .gt_font_bold {
+  font-weight: bold;
+}
+
+#uxhsbqngcq .gt_font_italic {
+  font-style: italic;
+}
+
+#uxhsbqngcq .gt_super {
+  font-size: 65%;
+}
+
+#uxhsbqngcq .gt_footnote_marks {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 75%;
+  vertical-align: 0.4em;
+}
+
+#uxhsbqngcq .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#uxhsbqngcq .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#uxhsbqngcq .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#uxhsbqngcq .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#uxhsbqngcq .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#uxhsbqngcq .gt_indent_5 {
+  text-indent: 25px;
+}
+</style>
+<table class="gt_table">
+  <caption><strong>Comparação entre nascidos vivos sem anomalias e com síndrome de Down, segundo variáveis dos pais para o período de 2011-2020</strong></caption>
+  
+  <thead class="gt_col_headings">
+    <tr>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col"><strong>Característica</strong></th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col"><strong>N</strong></th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col"><strong>Síndrome de Down</strong>, N = 545</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col"><strong>Sem anomalias</strong>, N = 937,083</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col"><strong>p-value</strong><sup class="gt_footnote_marks">1</sup></th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Estado Civil da Mãe, n(%)</td>
+<td class="gt_row gt_left">937,628</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left"><0.001</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Casada</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">240(44%)</td>
+<td class="gt_row gt_left">322,497(34%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Divorciada</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">17(3.1%)</td>
+<td class="gt_row gt_left">12,577(1.3%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Solteira</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">149(27%)</td>
+<td class="gt_row gt_left">327,237(35%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">União Estável</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">135(25%)</td>
+<td class="gt_row gt_left">267,780(29%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Viúva</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">1(0.2%)</td>
+<td class="gt_row gt_left">1,769(0.2%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Ignorado</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">3(0.6%)</td>
+<td class="gt_row gt_left">5,223(0.6%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Anos de Estudo da Mãe, n(%)</td>
+<td class="gt_row gt_left">937,628</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left"><0.001</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Nenhum</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">2(0.4%)</td>
+<td class="gt_row gt_left">1,330(0.1%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">1 a 3 anos</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">17(3.1%)</td>
+<td class="gt_row gt_left">17,766(1.9%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">4 a 7 anos</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">87(16%)</td>
+<td class="gt_row gt_left">142,012(15%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">8 a 11 anos</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">253(46%)</td>
+<td class="gt_row gt_left">533,231(57%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">12 ou mais</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">184(34%)</td>
+<td class="gt_row gt_left">237,590(25%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Ignorado</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">2(0.4%)</td>
+<td class="gt_row gt_left">5,154(0.6%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Escolaridade da Mãe, n(%)</td>
+<td class="gt_row gt_left">937,628</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left"><0.001</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Sem escolaridade</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">2(0.4%)</td>
+<td class="gt_row gt_left">1,064(0.1%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Fundamental I (1ª a 4ª série)</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">26(4.8%)</td>
+<td class="gt_row gt_left">31,472(3.4%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Fundamental II (5ª a 8ª série)</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">96(18%)</td>
+<td class="gt_row gt_left">200,040(21%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Médio (antigo 2º Grau)</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">188(34%)</td>
+<td class="gt_row gt_left">387,728(41%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Superior completo</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">140(26%)</td>
+<td class="gt_row gt_left">162,849(17%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Superior incompleto</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">29(5.3%)</td>
+<td class="gt_row gt_left">52,215(5.6%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Ignorado</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">64(12%)</td>
+<td class="gt_row gt_left">101,715(11%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Grupo da Ocupação da Mãe, n(%)</td>
+<td class="gt_row gt_left">937,628</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left"><0.001</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Dona de casa</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">142(26%)</td>
+<td class="gt_row gt_left">320,726(34%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Estudante</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">7(1.3%)</td>
+<td class="gt_row gt_left">24,184(2.6%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Membro do poder público e gerentes</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">21(3.9%)</td>
+<td class="gt_row gt_left">28,931(3.1%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Profissional das ciências e das artes</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">98(18%)</td>
+<td class="gt_row gt_left">116,622(12%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Técnica de nível médio</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">37(6.8%)</td>
+<td class="gt_row gt_left">54,453(5.8%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Trabalhadora agropecuária, florestal e da pesca</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">19(3.5%)</td>
+<td class="gt_row gt_left">26,939(2.9%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Trabalhadora da produção de bens e serviços industriais</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">49(9.0%)</td>
+<td class="gt_row gt_left">90,528(9.7%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Trabalhadora de serviços administrativos</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">57(10%)</td>
+<td class="gt_row gt_left">98,289(10%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Trabalhadora de serviços de reparação e manutenção</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">1(0.2%)</td>
+<td class="gt_row gt_left">5,711(0.6%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Trabalhadora de serviços diversos ou comércio</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">94(17%)</td>
+<td class="gt_row gt_left">124,876(13%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Ignorado</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">20(3.7%)</td>
+<td class="gt_row gt_left">45,824(4.9%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Raça da Mãe, n(%)</td>
+<td class="gt_row gt_left">937,628</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">>0.9</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Amarela</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">0(0%)</td>
+<td class="gt_row gt_left">1,305(0.1%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Branca</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">414(76%)</td>
+<td class="gt_row gt_left">705,779(75%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Indígena</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">1(0.2%)</td>
+<td class="gt_row gt_left">2,653(0.3%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Parda</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">39(7.2%)</td>
+<td class="gt_row gt_left">78,941(8.4%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Preta</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">17(3.1%)</td>
+<td class="gt_row gt_left">28,259(3.0%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Ignorado</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">74(14%)</td>
+<td class="gt_row gt_left">120,146(13%)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Idade da Mãe</td>
+<td class="gt_row gt_left">937,623</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left"><0.001</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">n</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">545</td>
+<td class="gt_row gt_left">937,078</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Média (DP)</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">35 (7)</td>
+<td class="gt_row gt_left">27 (6)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Mínimo</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">16</td>
+<td class="gt_row gt_left">10</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Máximo</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">49</td>
+<td class="gt_row gt_left">65</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Mediana</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">37</td>
+<td class="gt_row gt_left">27</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Variância</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">52</td>
+<td class="gt_row gt_left">42</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="font-weight: bold;">Idade do Pai</td>
+<td class="gt_row gt_left">456,891</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left"><0.001</td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">n</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">244</td>
+<td class="gt_row gt_left">456,647</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Média (DP)</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">37 (8)</td>
+<td class="gt_row gt_left">31 (7)</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Mínimo</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">17</td>
+<td class="gt_row gt_left">9</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Máximo</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">65</td>
+<td class="gt_row gt_left">99</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Mediana</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">36</td>
+<td class="gt_row gt_left">30</td>
+<td class="gt_row gt_left"></td></tr>
+    <tr><td class="gt_row gt_left" style="text-align: left; text-indent: 10px;">Variância</td>
+<td class="gt_row gt_left"></td>
+<td class="gt_row gt_left">62</td>
+<td class="gt_row gt_left">56</td>
+<td class="gt_row gt_left"></td></tr>
+  </tbody>
+  <tfoot class="gt_sourcenotes">
+    <tr>
+      <td class="gt_sourcenote" colspan="5"><em>Fonte: Sinasc</em></td>
+    </tr>
+  </tfoot>
+  <tfoot class="gt_footnotes">
+    <tr>
+      <td class="gt_footnote" colspan="5"><sup class="gt_footnote_marks">1</sup> Fisher's Exact Test for Count Data with simulated p-value
+(based on 2000 replicates); Kruskal-Wallis rank sum test</td>
+    </tr>
+  </tfoot>
+</table>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

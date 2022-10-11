@@ -1,0 +1,85 @@
+name: "site_relatorio"
+title: "Anomalias Congênitas em Santa Catarina 2"
+output_dir: "."
+navbar:
+  right:
+    - text: "Caracterização"
+      menu:
+        - text: "Variavéis de gestação e parto"
+          href: variaveis_rn.html
+        - text: "---------"  
+        - text: "Variáveis dos pais"
+          href: veriaveis_pais.html
+    - text: "Comparações dados gestação e parto"
+      menu:
+        - text: "Hipospádias"
+          href: hipospadia_rn.html
+        - text: "---------"
+        - text: "Sexo indefinido"
+          href: sexind_rn.html
+        - text: "---------"  
+        - text: "Cardiopatias congênitas"
+          href: cardio_rn.html
+        - text: "---------"  
+        - text: "Defeitos da parede abdominal"
+          href: abdominal_rn.html
+        - text: "---------"  
+        - text: "Defeitos de membros"
+          href: membros_rn.html
+        - text: "---------"  
+        - text: "Defeitos de tubo neural"
+          href: neural_rn.html
+        - text: "---------"  
+        - text: "Fendas orais"
+          href: fendas_rn.html
+        - text: "---------"  
+        - text: "Microcefalia"
+          href: microcefalia_rn.html
+        - text: "---------"  
+        - text: "Síndrome de Down"
+          href: down_rn.html
+    - text: "Comparações dados pais"
+      menu:
+        - text: "Hipospádias"
+          href: hipospadia_pais.html
+        - text: "---------"
+        - text: "Sexo indefinido"
+          href: sexind_pais.html
+        - text: "---------"  
+        - text: "Cardiopatias congênitas"
+          href: cardio_pais.html
+        - text: "---------"  
+        - text: "Defeitos da parede abdominal"
+          href: abdominal_pais.html
+        - text: "---------"  
+        - text: "Defeitos de membros"
+          href: membros_pais.html
+        - text: "---------"  
+        - text: "Defeitos de tubo neural"
+          href: neural_pais.html
+        - text: "---------"  
+        - text: "Fendas orais"
+          href: fendas_pais.html
+        - text: "---------"  
+        - text: "Microcefalia"
+          href: microcefalia_pais.html
+        - text: "---------"  
+        - text: "Síndrome de Down"
+          href: down_pais.html
+    - text: "Histogramas variáveis contínuas"
+      menu:
+        - text: "Peso ao nascimento"
+          href: peso.html
+        - text: "---------"
+        - text: "Semanas de gestação"
+          href: semana.html
+        - text: "---------"  
+        - text: "Idade da nãe"
+          href: idade_mae.html
+        - text: "---------"  
+        - text: "Idade do pai"
+          href: idade_pai.html
+ 
+output:
+  html_document:
+    theme: flatly

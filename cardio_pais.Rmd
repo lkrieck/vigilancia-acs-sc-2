@@ -1,0 +1,28 @@
+---
+title: Cardiopatias congênitas
+output:
+  html_document
+
+---
+
+
+```{r, eval=TRUE, include=FALSE, cache=FALSE}
+knitr::read_chunk("estatistica descritiva.R")
+```
+
+
+```{r, biblioteca_stat, include=FALSE, results='hide'}
+```
+
+```{r, funcoes, include=FALSE, results='hide'}
+```
+
+```{r, dados_stat, include=FALSE, results='hide'}
+```
+
+```{r, dados_pais, include=FALSE, results='hide'}
+```
+
+```{r, tabela_comparacao_pais_cardio, echo=FALSE, warning=FALSE, message=FALSE}
+```
+
